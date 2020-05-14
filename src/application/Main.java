@@ -7,10 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("*** Read the coordinates X and Y until one is zero ***");
-		System.out.println();
-		
+				
 		boolean out = false;
 		while(out == false) {
 			System.out.print("Enter the X coordinate: ");
@@ -21,7 +18,12 @@ public class Main {
 			else if (x < 0 && y > 0) System.out.println("Second!");
 			else if (x < 0 && y < 0) System.out.println("Third!");
 			else if (x > 0 && y < 0) System.out.println("Fourth!");
-			else if (x == 0 || y == 0) out = true;
+			else if (x == 0 || y == 0) {
+				System.out.println();
+				System.out.println("One of the coordinaters is zero!");
+				System.out.println("END");
+				out = true;
+			}
 			System.out.println();
 		}
 		

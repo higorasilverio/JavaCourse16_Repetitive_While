@@ -1,0 +1,1 @@
+Read the coordinates X and Y until one is zero.
